@@ -1,0 +1,64 @@
+.Row {
+    margin-left: 20px;
+    margin-top: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+.Posters::-webkit-scrollbar{
+    display: none;
+}
+/* .Posters:focus-within .Poster,
+.Posters:hover .Poster{
+    transform: translateX(-25%);
+} */
+.Poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+    border-radius: 2.5px;
+}
+.Poster:hover {
+    transform: scale(1.10);
+}
+/* .Poster:hover ~.Poster{
+    transform: translateX(25%);
+} */
+.PosterLarge {
+    max-height: 250px;
+}
+.PosterLarge:hover {
+    transform: scale(1.11);
+}
+.escape {
+    border-radius: 75%;
+    padding: 10px;
+    text-align: center;
+    color: #E50914;
+    background-color: #000;
+    border: none;
+    /* box-shadow: 1px 1px rgba(126, 122, 122, 0.5); */
+    /* right: 10px; */
+    float: right;
+    /* margin-right: 10px; */
+    margin: 15px;
+    width: 50px;
+    height: 55px;
+    transition: all 0.3s ease-in;
+    font-family: unset;
+    font-size: x-large;
+    font-weight: 550;
+    
+}
+.escape:hover {
+    background-color: #ccc;
+    color: #000;
+}
